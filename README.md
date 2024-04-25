@@ -13,7 +13,7 @@
 
 - What makes your project stand out? (if this makes my life easier in making) this is taught  by our teacher and helped even more by our TA's to better help us as future developers/programmers if it stands out then so be it if it doesn't then oh well as long as other people can read it with clearity  and precision then i am fine with that.
 
-## Table of Contents:=> 
+## Table of Contents:
 
 ## [Installation]: i have installed installed inquirer 8.2.4, colors into my index.js 
 
