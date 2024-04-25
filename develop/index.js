@@ -2,7 +2,7 @@
 const fs = require("fs");
 const colors = require("colors");
 const inquirer = require("inquirer");
-const { type } = require("os");
+// const { type } = require("os");
 
 //TODO: Create an array of questions for user input
 
@@ -23,58 +23,46 @@ inquirer
       message: 'where are you from?:',
       name: 'bio',
     },
+
+  
+  {type:"input",
+  message:"What is a description of your project",
+  name:"Installation",
+  
+  },  
+  {type:"input",
+  message:"What is a description of your project",
+  name:"Usage",
+  
+  },  {type:"input",
+  message:"What is a description of your project",
+  name:"License",
+  
+  },  {type:"input",
+  message:"What is a description of your project",
+  name:"Contributing",
+  
+  },  {type:"input",
+  message:"What is a description of your project",
+  name:"Test",
+  
+  }  
   ])
 
   // aasemble a template literal with the data
   .then((response) =>{
-    let html =`
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>Hello my name is ${response.name}<h1>
-        <h2>i am from ${response.location}<h2>
-        <p> my bio is ${response.bio}<p>
-    </body>
-    </html>
-    `
+    let examplereadme =` `
 
 const questions = [
     {type: 'input',
     message: 'What is a description of your project',
     name: 'Table of Contents',
 },
-{
+
 //     type: "",
 //     message: "",
 //     name: "",
-},
-{type:"input",
-message:"What is a description of your project",
-name:"Installation",
 
-},  
-{type:"input",
-message:"What is a description of your project",
-name:"Usage",
-
-},  {type:"input",
-message:"What is a description of your project",
-name:"License",
-
-},  {type:"input",
-message:"What is a description of your project",
-name:"Contributing",
-
-},  {type:"input",
-message:"What is a description of your project",
-name:"Test",
-
-}  
 //     // {Table of Contents}
 //     // {Installation},
 //     // {Usage},
@@ -86,7 +74,7 @@ name:"Test",
 
 // TODO: create a fdunction to write readme file
 // fs to write file
-fs.writeFile(`index.html`, html, (err) =>
+fs.writeFile(`examplereadme.md`, html, (err) =>
 err ? console.error(err) : console.log("success"))
 });
 
